@@ -1,0 +1,181 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex; /* Para estructurar el layout con el menú lateral */
+}
+
+/* Header */
+header {
+    background-color: #02325c;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Menú lateral */
+nav {
+    width: 240px;
+    background-color: #00193d;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 20px 20px; /* Deja espacio para el header */
+    box-sizing: border-box;
+    color: white;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es largo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+/* Botón de Inicio con fondo naranja e ícono */
+nav ul li a.inicio {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+nav ul li a.inicio i {
+    font-size: 18px; /* Tamaño del ícono */
+    color: white;
+}
+
+nav ul li a.inicio:hover {
+    background-color: #e55a00;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #02325c;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 260px; /* Espacio para el menú lateral */
+    padding: 80px 20px 20px; /* Deja espacio para el header */
+    flex: 1;
+    background-color: #f5f5f5;
+}
+
+.form-header {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Personalización de tamaños para campos específicos */
+#responsable {
+    width: 50%;
+    height: 40px;
+}
+
+#email {
+    width: 50%;
+    height: 40px;
+}
+
+#alcance, #descripcion, #objetivo, #proceso, #definiciones, #instrucciones {
+    width: 100%; /* Ajuste al ancho completo del formulario */
+    height: 150px;
+}
+
+/* Texto pequeño en los campos */
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: gray;
+    font-size: 12px;
+}
+
+/* Botones */
+.form-buttons {
+    text-align: right;
+}
+
+.form-buttons button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
